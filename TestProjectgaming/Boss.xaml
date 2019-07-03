@@ -1,0 +1,45 @@
+﻿<Window x:Class="TestProjectgaming.Boss"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestProjectgaming"
+        mc:Ignorable="d"
+        Title="Boss" Height="768" Width="1024" Loaded="Window_Loaded" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" ResizeMode="NoResize">
+    <Grid Background="Black">
+        <Canvas HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1024">
+            <Image x:Name="image" Height="768" Width="1024" Source="res/title/BG.png" Focusable="True"/>
+            <Image x:Name="image1" Height="168" Canvas.Top="620.8" Width="394" Source="res/title/BG6.png" Stretch="Fill"/>
+            <Image x:Name="image1_Copy" Height="168" Canvas.Top="620.8" Width="460" Source="res/title/BG6.png" Stretch="Fill" Canvas.Left="316"/>
+            <Image x:Name="image1_Copy1" Height="168" Canvas.Top="620.8" Width="328" Source="res/title/BG6.png" Stretch="Fill" Canvas.Left="715.2"/>
+            <ProgressBar x:Name="playerHP" Height="30" Canvas.Top="54.6" Width="219" Canvas.Left="9.7" Value="101" Foreground="Red"/>
+            <Label x:Name="label" Content="NINJA" Height="40" Canvas.Left="9.6" Canvas.Top="9.6" Width="117" FontSize="24" FontWeight="Bold"/>
+            <ProgressBar x:Name="BossHP" Height="30" Canvas.Top="97" Width="280" Canvas.Left="715" Value="100" Foreground="Red"/>
+            <Label x:Name="label1" Content="Magic Skeleton" Height="40" Canvas.Left="809" Canvas.Top="45" Width="186" FontSize="24" FontWeight="Bold"/>
+            <Image x:Name="image2_Copy" Height="180" Canvas.Left="200.8" Canvas.Top="441.6" Width="116" Source="res/title/Tree_3.png" Stretch="Fill"/>
+            <Image x:Name="image2" Height="319" Canvas.Left="108" Canvas.Top="302.5" Width="208" Source="res/title/Tree_2.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy1" Height="48" Canvas.Left="248.8" Canvas.Top="572.8" Width="93" Source="res/title/Stone.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy" Height="48" Canvas.Left="103.2" Canvas.Top="572.8" Width="93" Source="res/title/Bush (2).png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy2" Height="32" Canvas.Left="155.2" Canvas.Top="588.8" Width="40" Source="res/title/Mushroom_1.png" Stretch="Fill" RenderTransformOrigin="1.92,-0.197"/>
+            <Image x:Name="image3_Copy3" Height="42" Canvas.Left="180.8" Canvas.Top="579.2" Width="48" Source="res/title/Mushroom_2.png" Stretch="Fill" RenderTransformOrigin="1.92,-0.197"/>
+            <Image x:Name="image2_Copy5" Height="180" Canvas.Left="611.2" Canvas.Top="440.8" Width="116" Source="res/title/Tree_3.png" Stretch="Fill"/>
+            <Image x:Name="image2_Copy2" Height="319" Canvas.Left="518.4" Canvas.Top="303.3" Width="208" Source="res/title/Tree_2.png" Stretch="Fill"/>
+            <Image x:Name="image3" Height="48" Canvas.Left="518.4" Canvas.Top="574.4" Width="93" Source="res/title/Bush (2).png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy4" Height="48" Canvas.Left="464.8" Canvas.Top="574.4" Width="93" Source="res/title/Bush (3).png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy5" Height="58" Canvas.Left="518.4" Canvas.Top="558.4" Width="57" Source="res/title/Sign_1.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy8" Height="32" Canvas.Left="580" Canvas.Top="590.4" Width="40" Source="res/title/Mushroom_1.png" Stretch="Fill" RenderTransformOrigin="1.92,-0.197"/>
+            <Image x:Name="image2_Copy9" Height="40" Canvas.Left="808.8" Canvas.Top="582.4" Width="50" Source="res/title/Crate.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy6" Height="48" Canvas.Left="828.8" Canvas.Top="572.8" Width="93" Source="res/title/Stone.png" Stretch="Fill"/>
+            <Image x:Name="image2_Copy1" Height="38" Canvas.Left="828.8" Canvas.Top="544.2" Width="50" Source="res/title/Crate.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy7" Height="48" Canvas.Left="736" Canvas.Top="579.2" Width="93" Source="res/title/Stone.png" Stretch="Fill"/>
+            <Image x:Name="image3_Copy9" Height="42" Canvas.Left="447.2" Canvas.Top="580" Width="48" Source="res/title/Mushroom_2.png" Stretch="Fill" RenderTransformOrigin="1.92,-0.197"/>
+            <Image x:Name="player" Height="140" Canvas.Left="9.6" Canvas.Top="480.8" Width="140" Source="res/1.png"/>
+            <Image x:Name="boss" Height="209" Canvas.Left="808.8" Canvas.Top="407.2" Width="186" Source="res/idle 2 (1).png" Stretch="Fill"/>
+            <Image x:Name="kunai" Height="13" Canvas.Left="-121.6" Canvas.Top="558.4" Width="44" Stretch="Fill" Source="res/Kunaii.png"/>
+            <Image x:Name="shuriken" Height="47" Canvas.Left="-78.4" Canvas.Top="540.9" Width="52" Stretch="Fill" Source="res/shuriken.png"/>
+            <Image x:Name="bomb" Height="47" Canvas.Left="-72.8" Canvas.Top="540.9" Width="52" Stretch="Fill" Source="res/unnamed.png"/>
+            <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="84" FontSize="20" Canvas.Left="911" Canvas.Top="11"/>
+        </Canvas>
+
+    </Grid>
+</Window>

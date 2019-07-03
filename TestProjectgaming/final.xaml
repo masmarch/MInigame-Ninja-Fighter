@@ -1,0 +1,27 @@
+﻿<Window x:Class="TestProjectgaming.final"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestProjectgaming"
+        mc:Ignorable="d"
+        Title="final" Height="768" Width="1024" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="res/title/bg1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="txtResult" Content="Label" HorizontalAlignment="Left" Height="100" Margin="338,92,0,0" VerticalAlignment="Top" Width="404" FontSize="48" Foreground="#FFDC5656" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="420" Margin="265,129,0,0" VerticalAlignment="Top" Width="425" Source="res/Dead10.png" Stretch="Fill"/>
+        <Button x:Name="button" Content="Restart" HorizontalAlignment="Left" Height="59" Margin="350,595,0,0" VerticalAlignment="Top" Width="258" RenderTransformOrigin="0.5,0.5" FontFamily="Tempus Sans ITC" FontSize="36" FontWeight="Bold" Click="button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.239"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.996"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61EEE551-F0A6-4D32-B437-93E7F846479C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestProjectgaming</RootNamespace>
+    <AssemblyName>TestProjectgaming</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Howtoplay.xaml.cs">
+      <DependentUpon>Howtoplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shop1.xaml.cs">
+      <DependentUpon>shop1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Winner.xaml.cs">
+      <DependentUpon>Winner.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Boss.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="final.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Howtoplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Boss.xaml.cs">
+      <DependentUpon>Boss.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="final.xaml.cs">
+      <DependentUpon>final.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="playWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="playWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shop1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Winner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="playWindow1.xaml.cs">
+      <DependentUpon>playWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="playWindow2.xaml.cs">
+      <DependentUpon>playWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="res\Attack1.png" />
+    <Resource Include="res\Attack10.png" />
+    <Resource Include="res\Attack2.png" />
+    <Resource Include="res\Attack3.png" />
+    <Resource Include="res\Attack4.png" />
+    <Resource Include="res\Attack5.png" />
+    <Resource Include="res\Attack6.png" />
+    <Resource Include="res\Attack7.png" />
+    <Resource Include="res\Attack8.png" />
+    <Resource Include="res\Attack9.png" />
+    <Resource Include="res\Kunaii.png" />
+    <Resource Include="res\next1.png" />
+    <Resource Include="res\next10.png" />
+    <Resource Include="res\next2.png" />
+    <Resource Include="res\next3.png" />
+    <Resource Include="res\next4.png" />
+    <Resource Include="res\next5.png" />
+    <Resource Include="res\next6.png" />
+    <Resource Include="res\next7.png" />
+    <Resource Include="res\next8.png" />
+    <Resource Include="res\next9.png" />
+    <Resource Include="res\Thro1.png" />
+    <Resource Include="res\Thro10.png" />
+    <Resource Include="res\Thro2.png" />
+    <Resource Include="res\Thro3.png" />
+    <Resource Include="res\Thro4.png" />
+    <Resource Include="res\Thro5.png" />
+    <Resource Include="res\Thro6.png" />
+    <Resource Include="res\Thro7.png" />
+    <Resource Include="res\Thro8.png" />
+    <Resource Include="res\Thro9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\1.png" />
+    <Resource Include="res\10.png" />
+    <Resource Include="res\2.png" />
+    <Resource Include="res\3.png" />
+    <Resource Include="res\4.png" />
+    <Resource Include="res\5.png" />
+    <Resource Include="res\6.png" />
+    <Resource Include="res\7.png" />
+    <Resource Include="res\8.png" />
+    <Resource Include="res\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\attackback1.png" />
+    <Resource Include="res\attackback10.png" />
+    <Resource Include="res\attackback2.png" />
+    <Resource Include="res\attackback3.png" />
+    <Resource Include="res\attackback4.png" />
+    <Resource Include="res\attackback5.png" />
+    <Resource Include="res\attackback6.png" />
+    <Resource Include="res\attackback7.png" />
+    <Resource Include="res\attackback8.png" />
+    <Resource Include="res\attackback9.png" />
+    <Resource Include="res\Kunai.png" />
+    <Resource Include="res\moveback1.png" />
+    <Resource Include="res\moveback10.png" />
+    <Resource Include="res\moveback2.png" />
+    <Resource Include="res\moveback3.png" />
+    <Resource Include="res\moveback4.png" />
+    <Resource Include="res\moveback5.png" />
+    <Resource Include="res\moveback6.png" />
+    <Resource Include="res\moveback7.png" />
+    <Resource Include="res\moveback8.png" />
+    <Resource Include="res\moveback9.png" />
+    <Resource Include="res\Throw1.png" />
+    <Resource Include="res\Throw10.png" />
+    <Resource Include="res\Throw2.png" />
+    <Resource Include="res\Throw3.png" />
+    <Resource Include="res\Throw4.png" />
+    <Resource Include="res\Throw5.png" />
+    <Resource Include="res\Throw6.png" />
+    <Resource Include="res\Throw7.png" />
+    <Resource Include="res\Throw8.png" />
+    <Resource Include="res\Throw9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\unnamed.png" />
+    <Resource Include="res\idle 2 %281%29.png" />
+    <Resource Include="res\idle 2 %2810%29.png" />
+    <Resource Include="res\idle 2 %282%29.png" />
+    <Resource Include="res\idle 2 %283%29.png" />
+    <Resource Include="res\idle 2 %284%29.png" />
+    <Resource Include="res\idle 2 %285%29.png" />
+    <Resource Include="res\idle 2 %286%29.png" />
+    <Resource Include="res\idle 2 %287%29.png" />
+    <Resource Include="res\idle 2 %288%29.png" />
+    <Resource Include="res\idle 2 %289%29.png" />
+    <Resource Include="res\Dead10.png" />
+    <Resource Include="res\Glide1.png" />
+    <Resource Include="res\Glide2.png" />
+    <Resource Include="res\Glide3.png" />
+    <Resource Include="res\Glide4.png" />
+    <Resource Include="res\Glide5.png" />
+    <Resource Include="res\Glide6.png" />
+    <Resource Include="res\Glide7.png" />
+    <Resource Include="res\Glide8.png" />
+    <Resource Include="res\Glide9.png" />
+    <Resource Include="res\Glide10.png" />
+    <Resource Include="res\Kawasakininja-logo.svg.png" />
+    <Resource Include="res\shuriken.png" />
+    <Resource Include="res\axe-42591_640.png" />
+    <Resource Include="res\boom.png" />
+    <Resource Include="res\Shadow-18.jpg" />
+    <Resource Include="res\1_10624_110823111630_3b.jpg" />
+    <Resource Include="res\AXE1.png" />
+    <Resource Include="res\AXE10.png" />
+    <Resource Include="res\AXE2.png" />
+    <Resource Include="res\AXE3.png" />
+    <Resource Include="res\AXE4.png" />
+    <Resource Include="res\AXE5.png" />
+    <Resource Include="res\AXE6.png" />
+    <Resource Include="res\AXE7.png" />
+    <Resource Include="res\AXE8.png" />
+    <Resource Include="res\AXE9.png" />
+    <Resource Include="res\AXEBACK1.png" />
+    <Resource Include="res\AXEBACK10.png" />
+    <Resource Include="res\AXEBACK2.png" />
+    <Resource Include="res\AXEBACK3.png" />
+    <Resource Include="res\AXEBACK4.png" />
+    <Resource Include="res\AXEBACK5.png" />
+    <Resource Include="res\AXEBACK6.png" />
+    <Resource Include="res\AXEBACK7.png" />
+    <Resource Include="res\AXEBACK8.png" />
+    <Resource Include="res\AXEBACK9.png" />
+    <Content Include="res\sound\BIGSMSH.WAV" />
+    <Content Include="res\sound\swng.wav" />
+    <Resource Include="res\run1.png" />
+    <Resource Include="res\run2.png" />
+    <Resource Include="res\walk1.png" />
+    <Resource Include="res\walk2.png" />
+    <Resource Include="res\Boss1.png" />
+    <Resource Include="res\Boss10.png" />
+    <Resource Include="res\Boss2.png" />
+    <Resource Include="res\Boss3.png" />
+    <Resource Include="res\Boss4.png" />
+    <Resource Include="res\Boss5.png" />
+    <Resource Include="res\Boss6.png" />
+    <Resource Include="res\Boss7.png" />
+    <Resource Include="res\Boss8.png" />
+    <Resource Include="res\Boss9.png" />
+    <Resource Include="res\title\Bush %281%29.png" />
+    <Resource Include="res\title\Bush %282%29.png" />
+    <Resource Include="res\title\Bush %283%29.png" />
+    <Resource Include="res\title\Bush %284%29.png" />
+    <Resource Include="res\title\Crate.png" />
+    <Resource Include="res\title\Mushroom_1.png" />
+    <Resource Include="res\title\Mushroom_2.png" />
+    <Resource Include="res\title\Sign_1.png" />
+    <Resource Include="res\title\Sign_2.png" />
+    <Resource Include="res\title\Stone.png" />
+    <Resource Include="res\title\Tree_1.png" />
+    <Resource Include="res\title\Tree_2.png" />
+    <Resource Include="res\title\Tree_3.png" />
+    <Resource Include="res\title\BG.png" />
+    <Resource Include="res\title\BG1.png" />
+    <Resource Include="res\title\BG2.png" />
+    <Resource Include="res\title\BG3.png" />
+    <Resource Include="res\title\BG4.png" />
+    <Resource Include="res\title\BG5.png" />
+    <Resource Include="res\title\BG6.png" />
+    <Resource Include="res\title\BG7.png" />
+    <Resource Include="res\mon1.png" />
+    <Resource Include="res\mon2.png" />
+    <Resource Include="res\monb1.png" />
+    <Resource Include="res\monb2.png" />
+    <Resource Include="res\run3.png" />
+    <Resource Include="res\run4.png" />
+    <Resource Include="res\title\bg1.jpg" />
+    <Resource Include="res\title\fluck.jpg" />
+    <Resource Include="res\title\Kawasakininja-logo.svg.png" />
+    <Resource Include="res\title\kisekae_2_prop___ninja_star_by_zebuta-d8ru0p8.png" />
+    <Resource Include="res\title\ninja_lettering.png" />
+    <Resource Include="res\title\Shadow-ZIN.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
